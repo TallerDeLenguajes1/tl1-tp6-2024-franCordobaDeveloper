@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "tl1-tp6-2024-franCordobaDeveloper.csproj", //CAMBIAR POR EL NOMBRE DEL ARCHIVO .csproj QUE ESTA EN LA CARPETA RAIZ 
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "tl1-tp6-2024-franCordobaDeveloper.csproj", //CAMBIAR POR EL NOMBRE DEL ARCHIVO .csproj QUE ESTA EN LA CARPETA RAIZ
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "tl1-tp6-2024-franCordobaDeveloper.csproj" //CAMBIAR POR EL NOMBRE DEL ARCHIVO .csproj QUE ESTA EN LA CARPETA RAIZ
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
